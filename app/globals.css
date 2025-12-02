@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  
+  --hero-background: linear-gradient(90deg, rgba(244, 128, 111, 0.2) 0%, rgba(197, 74, 180, 0.2) 50%, rgba(168, 75, 197, 0.2) 100%); 
+  --hero-text: #15171D;
+  --cta-background: #2B2297;
+  --cta-text: #ffffff;
+  --description-text: #424650;
+
+  --logo-text: linear-gradient(90deg, #F4806F 0%, #C54AB4 50%, #A84BC5 100%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --font-inter: var(--font-inter);
+
+  --color-primary: #2B2297;
+  --color-primary-hover: #1F186E;
+  --color-primary-foreground: #FFFFFF;
+  --color-accent: #A84BC5;
+  --color-accent-foreground: #FFFFFF;
+  --color-hero-background: var(--hero-background);
+  --color-hero-text: var(--hero-text);
+  --color-cta-background: var(--cta-background);
+  --color-cta-text: var(--cta-text);
+  --color-description-text: var(--description-text);
+  --color-logo-text: var(--logo-text);
+  --container-8xl: 90rem;
+
+  --text-3p5xl: 2rem;
+  --text-3p5xl--line-height: 2.5rem;
+}
+
+* {
+
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body,
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
